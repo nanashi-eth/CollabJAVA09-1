@@ -11,10 +11,10 @@ CREATE TABLE `java09`.`instrumento`
     UNIQUE INDEX `foto_UNIQUE` (`foto` ASC) VISIBLE
 );
 
-INSERT INTO instrumento (nombre, familia, fecha)
-VALUES ('Laúd', 'Cuerda pulsada', '1985-07-23'),
-       ('Guitarra', 'Cuerda pulsada', '2012-04-11'),
-       ('Trompeta', 'Viento metal', '1998-11-05'),
-       ('Trombón', 'Viento metal', '2009-03-24'),
-       ('Tuba', 'Viento metal', '2021-06-15');
+INSERT INTO instrumento (nombre, familia, foto, fecha)
+VALUES ('Laúd', 'Cuerda pulsada', 'laud.png' ,'1985-07-23'),
+       ('Guitarra', 'Cuerda pulsada', 'guitarra.png' , '2012-04-11'),
+       ('Trompeta', 'Viento metal', 'trompeta.png' , '1998-11-05'),
+       ('Trombón', 'Viento metal', 'trombon.png' , '2009-03-24'),
+       ('Tuba', 'Viento metal', 'tuba.png' , '2021-06-15');
 

@@ -17,4 +17,15 @@
     top: 10%;
     font-size: 45px;
     font-weight: bold;
+
+.tabla {
+    overflow-x: auto;
+}
+
+tr:nth-child(even) {
+    background-color: #90EE90;
+}
+
+TR:hover {
+    background-color: #FFFFED;
 }
