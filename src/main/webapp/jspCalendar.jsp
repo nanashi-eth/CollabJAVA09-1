@@ -25,9 +25,9 @@
             } catch (ParseException e) {
                 throw new RuntimeException(e);
             }
+            
         clock.updateTime(fechaNacimiento);
-    %>
-
+    %>    
 </jsp:useBean>
 
 <!-- Resto del código para mostrar la fecha -->
@@ -39,8 +39,9 @@
 
 <section>
     <% String ruta = request.getContextPath() + "/resources/" + clock.getZodiaco() + ".jpg"; %>
-    <img src="<%= ruta %>" alt="Zodiac Sign Image">
-    <p><%= clock.getZodiaco() %></p>
+    <img class="img_zodiac" src="<%= ruta %>" alt="Zodiac Sign Image">
+    <p class="text_title"><%= clock.getZodiaco() %></p>
+    <div class="text_zodiac"><%= clock.getTextZodiaco(clock.getZodiaco())%></div>
 </section>
 <%--
 <%@ include file="copyright.html" %>
