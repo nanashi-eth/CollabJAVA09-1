@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html  lang="es">
 <head>
-<title>Page Title</title>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/css/style.css">
 </head>
 <body>
 <%@page language="java" import="java.util.*" %>
