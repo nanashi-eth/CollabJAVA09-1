@@ -7,8 +7,18 @@
 <%@page language="java" import="java.util.*" %>
 <H1>Bienvenido a JSPCalendar</H1>
 
-<P>Hoy es</P>
-<jsp:useBean id="clock" class="com.example.collabjava09.JspCalendar" />
+<P>La fecha que has escogido es:</P>
+<%-- Obtener la fecha de la sesión --%>
+<% Date fecha = (Date) session.getAttribute("fecha"); %>
+
+<%-- Crear una instancia de JspCalendar pasando la fecha como parámetro --%>
+<jsp:useBean id="clock" class="com.example.collabjava09.JspCalendar">
+    <%
+        clock.updateTime(fecha);
+    %>
+</jsp:useBean>
+
+<!-- Resto del código para mostrar la fecha -->
 
 <UL>
 <LI>Día: <%= clock.getDayOfMonth() %>

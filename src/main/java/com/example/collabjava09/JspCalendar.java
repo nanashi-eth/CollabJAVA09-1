@@ -14,7 +14,7 @@ public class JspCalendar {
 	calendar.setTime(trialTime);
     }
 
-    public int getYear() {
+	public int getYear() {
 	return calendar.get(Calendar.YEAR);
     }
     
@@ -135,5 +135,9 @@ public class JspCalendar {
     public int getAMPM() {
 	return calendar.get(Calendar.AM_PM);
     }
+
+	public void updateTime(Date fecha) {
+		calendar.setTime(fecha);
+	}
 }
 
