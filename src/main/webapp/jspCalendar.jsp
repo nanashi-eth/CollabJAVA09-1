@@ -5,17 +5,28 @@
 </head>
 <body>
 <%@page language="java" import="java.util.*" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.text.ParseException" %>
 <H1>Bienvenido a JSPCalendar</H1>
 
 <P>La fecha que has escogido es:</P>
-<%-- Obtener la fecha de la sesión --%>
-<% Date fecha = (Date) session.getAttribute("fecha"); %>
-
 <%-- Crear una instancia de JspCalendar pasando la fecha como parámetro --%>
 <jsp:useBean id="clock" class="com.example.collabjava09.JspCalendar">
     <%
-        clock.updateTime(fecha);
+            // Retrieve the date value from request parameters
+            String fechaNacimientoString = request.getParameter("fechanac");
+
+            // Parse the date string into a Java Date object
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            Date fechaNacimiento = null;
+            try {
+                fechaNacimiento = sdf.parse(fechaNacimientoString);
+            } catch (ParseException e) {
+                throw new RuntimeException(e);
+            }
+        clock.updateTime(fechaNacimiento);
     %>
+
 </jsp:useBean>
 
 <!-- Resto del código para mostrar la fecha -->
