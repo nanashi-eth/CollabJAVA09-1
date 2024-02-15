@@ -8,7 +8,7 @@
 <H1>Bienvenido a JSPCalendar</H1>
 
 <P>Hoy es</P>
-<jsp:useBean id="clock" class="fecha.JspCalendar" />
+<jsp:useBean id="clock" class="com.example.collabjava09.JspCalendar" />
 
 <UL>
 <LI>Día: <%= clock.getDayOfMonth() %>

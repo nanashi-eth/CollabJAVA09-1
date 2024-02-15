@@ -1,7 +1,5 @@
 package com.example.collabjava09;
-
 import java.util.*;
-
 /* Los JavaBean requieren:
    - Un constructor sin parámetros o argumentos;
    - Sus propiedades han de tener sus métodos get y set
