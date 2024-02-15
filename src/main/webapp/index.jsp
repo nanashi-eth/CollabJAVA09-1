@@ -25,7 +25,7 @@
     <input type="submit" value="Ver Zodíaco">
 </form>
 <br>
-<c:forEach begin="0" step="1" end="10">
+<c:forEach begin="0" step="1" end="3">
     <p> COMPRO ORO </p>
 </c:forEach>
 <c:choose>
