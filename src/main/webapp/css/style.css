@@ -1,0 +1,11 @@
+.tabla {
+    overflow-x: auto;
+}
+
+tr:nth-child(even) {
+    background-color: #90EE90;
+}
+
+TR:hover {
+    background-color: #FFFFED;
+}
