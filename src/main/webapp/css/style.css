@@ -1,0 +1,20 @@
+.img_zodiac {
+    width: 20%;
+    height: 20%;
+}
+
+.text_zodiac {
+    position: absolute;
+    right: 20%;
+    left: 30%;
+    top: 22%;
+    Font-size: 20px;
+}
+.text_title {
+    position: absolute;
+    right: 20%;
+    left: 50%;
+    top: 10%;
+    font-size: 45px;
+    font-weight: bold;
+}
