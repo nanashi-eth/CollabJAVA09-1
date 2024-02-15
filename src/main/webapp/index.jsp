@@ -11,6 +11,7 @@
 <h1>BIENVENIDO A LA PRÁCTICA 9 DE PSP</h1>
 <h2>Autores</h2>
 <p>Pablo Rodríguez Zambrana</p>
+<p>Daniel Rosales Rodríguez</p>
 <p>En esta página podrás averiguar tu signo del zodiaco y ver una colección de instrumentos musicales</p>
 <form>
     <strong>Introduce tu nombre, por favor</strong>
