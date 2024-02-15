@@ -24,7 +24,7 @@
 </form>
 <br>
 <c:forEach begin="0" step="1" end="3">
-    <p> COMPRO ORO </p>
+    <p> COMPRO PLATA </p>
 </c:forEach>
 <br/>
 <a href="hello-servlet">Hello Servlet</a>
