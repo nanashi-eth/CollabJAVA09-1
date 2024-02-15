@@ -34,22 +34,13 @@
 <UL>
 <LI>Día: <%= clock.getDayOfMonth() %>
 <LI>Mes: <%= clock.getMonthInt() %>
-<LI>Año: <%= clock.getYear() %>
 </UL>
-<%-- Check for AM or PM --%>
-<%! int time = Calendar.getInstance().get(Calendar.AM_PM); %>
-<%
-if (time == Calendar.AM) {
-%>
-Buenos días
-<%
-}
-else {
-%>
-Buenas tardes
-<%
-}
-%>
+
+<section>
+    <% String ruta = request.getContextPath() + "/resources/" + clock.getZodiaco() + ".jpg"; %>
+    <img src="<%= ruta %>" alt="Zodiac Sign Image">
+    <p><%= clock.getZodiaco() %></p>
+</section>
 <%--
 <%@ include file="copyright.html" %>
 --%>
