@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html  lang="es">
 <head>
-<title>Page Title</title>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/css/style.css">
 </head>
 <body>
 <%@page language="java" import="java.util.*" %>
@@ -24,9 +25,9 @@
             } catch (ParseException e) {
                 throw new RuntimeException(e);
             }
+            
         clock.updateTime(fechaNacimiento);
-    %>
-
+    %>    
 </jsp:useBean>
 
 <!-- Resto del código para mostrar la fecha -->
@@ -34,22 +35,14 @@
 <UL>
 <LI>Día: <%= clock.getDayOfMonth() %>
 <LI>Mes: <%= clock.getMonthInt() %>
-<LI>Año: <%= clock.getYear() %>
 </UL>
-<%-- Check for AM or PM --%>
-<%! int time = Calendar.getInstance().get(Calendar.AM_PM); %>
-<%
-if (time == Calendar.AM) {
-%>
-Buenos días
-<%
-}
-else {
-%>
-Buenas tardes
-<%
-}
-%>
+
+<section>
+    <% String ruta = request.getContextPath() + "/resources/" + clock.getZodiaco() + ".jpg"; %>
+    <img class="img_zodiac" src="<%= ruta %>" alt="Zodiac Sign Image">
+    <p class="text_title"><%= clock.getZodiaco() %></p>
+    <div class="text_zodiac"><%= clock.getTextZodiaco(clock.getZodiaco())%></div>
+</section>
 <%--
 <%@ include file="copyright.html" %>
 --%>
