@@ -20,40 +20,7 @@
 
 <BODY>
 <H1> La gran tabla babilónica de los instrumentos </H1>
-
-<%
-    Connection connection = null;
-    try {
-        connection = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3307/java09", "root", "admin");
-    } catch (SQLException e) {
-        throw new RuntimeException(e);
-    }
-
-    Statement statement = null;
-    try {
-        statement = connection.createStatement();
-    } catch (SQLException e) {
-        throw new RuntimeException(e);
-    }
-    ResultSet resultset =
-            null;
-    try {
-        resultset = statement.executeQuery("select * from instrumento");
-    } catch (SQLException e) {
-        throw new RuntimeException(e);
-    }
-%>
-<% List<Instrumento> listaInstrumentos = new ArrayList<>(); %>
-<% while (resultset.next()) {
-    Instrumento instrumento = null;
-    String nombre = resultset.getString(2);
-    String familia = resultset.getString(3);
-    String foto = resultset.getString(4);
-    Date fecha = resultset.getDate(5);
-    instrumento = new Instrumento(nombre, familia, foto, fecha);
-    listaInstrumentos.add(instrumento);
-} %>
+<% List<Instrumento> listaInstrumentos = (List<Instrumento>) session.getAttribute("listaInstrumentos"); %>
 <section>
     <h2>INSTRUMENTOS DE LA FAMILIA DE CUERDA PULSADA</h2>
     <div class="tabla">
@@ -92,5 +59,7 @@
     </TABLE>
 </section>
 <p>Pulsa <a href="index.jsp">aquí</a> para ver el origen.</p>
+<!-- Make a request to the servlet when the page loads to populate the list -->
+<img src="instrumento-servlet" style="display:none;">
 </BODY>
 </HTML>

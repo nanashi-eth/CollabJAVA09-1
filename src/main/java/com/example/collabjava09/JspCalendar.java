@@ -13,8 +13,7 @@ public class JspCalendar {
 	Date trialTime = new Date();
 	calendar.setTime(trialTime);
     }
-
-    
+  
     public int getMonthInt() {
 	return 1 + calendar.get(Calendar.MONTH);
     }
