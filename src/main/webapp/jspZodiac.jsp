@@ -12,7 +12,7 @@
 
 <P>La fecha que has escogido es:</P>
 <%-- Crear una instancia de JspCalendar pasando la fecha como parámetro --%>
-<jsp:useBean id="clock" class="com.example.collabjava09.JspCalendar">
+<jsp:useBean id="clock" class="com.example.collabjava09.JspZodiac">
     <%
             // Retrieve the date value from request parameters
             String fechaNacimientoString = request.getParameter("fechanac");

@@ -1,7 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="java.sql.*" %>
 <%@ page import="com.example.collabjava09.Instrumento" %>
-<%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
 <!DOCTYPE html>
 

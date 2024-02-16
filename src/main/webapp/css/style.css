@@ -4,29 +4,49 @@
 }
 
 .text_zodiac {
-    position: absolute;
-    right: 20%;
-    left: 30%;
-    top: 22%;
-    Font-size: 20px;
+   position: absolute;
+   right: 20%;
+   left: 30%;
+   top: 22%;
+   Font-size: 20px;
 }
 .text_title {
-    position: absolute;
-    right: 20%;
-    left: 50%;
-    top: 10%;
-    font-size: 45px;
-    font-weight: bold;
+   position: absolute;
+   right: 20%;
+   left: 50%;
+   top: 10%;
+   font-size: 45px;
+   font-weight: bold;
 }
 
 .tabla {
-    overflow-x: auto;
+   overflow-x: auto;
 }
 
 tr:nth-child(even) {
-    background-color: #90EE90;
+   background-color: #90EE90;
 }
 
 TR:hover {
-    background-color: #FFFFED;
+   background-color: #FFFFED;
+}
+
+#divLista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust the width of the articles as needed */
+    gap: 20px; /* Adjust the gap between articles */
+}
+
+article {
+    background-color: #f0f0f0; /* Background color of each article */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.img_instrumento {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Maintain aspect ratio */
+    max-width: 200px; /* Limit the maximum width of the image */
+    max-height: 120px; /* Limit the maximum height of the image */
 }

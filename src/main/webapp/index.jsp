@@ -10,7 +10,7 @@
 <p>Pablo Rodríguez Zambrana</p>
 <p>Daniel Rosales Rodríguez</p>
 <p>En esta página podrás averiguar tu signo del zodiaco y ver una colección de instrumentos musicales</p>
-<form action="jspCalendar.jsp" id="zodiacForm">
+<form action="jspZodiac.jsp" id="zodiacForm">
     <strong>Introduce tu nombre, por favor</strong>
     <label>
         <input type="text" name="name"/>
