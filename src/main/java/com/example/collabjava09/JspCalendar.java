@@ -30,8 +30,6 @@ public class JspCalendar {
 	return months[m - 1];
 
     }
-	
-	
 
     public String getDay() {
 	int x = getDayOfWeek();

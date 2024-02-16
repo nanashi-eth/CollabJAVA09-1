@@ -2,9 +2,6 @@
     width: 20%;
     height: 20%;
 }
-.tabla {
-    overflow-x: auto;
-}
 
 .text_zodiac {
     position: absolute;
@@ -20,7 +17,11 @@
     top: 10%;
     font-size: 45px;
     font-weight: bold;
+
+.tabla {
+    overflow-x: auto;
 }
+
 tr:nth-child(even) {
     background-color: #90EE90;
 }
