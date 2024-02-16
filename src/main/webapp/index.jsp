@@ -22,11 +22,6 @@
     </label>
     <input type="submit" value="Ver Zodiaco"/>
 </form>
-<br>
-<c:forEach begin="0" step="1" end="3">
-    <p> COMPRO PLATA </p>
-</c:forEach>
 <br/>
 <p>Pulsa <a href="jspTable.jsp">aquí</a> para ver la gran tabla.</p>
-</body>
 </html>
