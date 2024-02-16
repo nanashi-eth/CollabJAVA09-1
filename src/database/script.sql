@@ -12,9 +12,9 @@ CREATE TABLE `java09`.`instrumento`
 );
 
 INSERT INTO instrumento (nombre, familia, foto, fecha)
-VALUES ('Laúd', 'Cuerda pulsada', 'laud.png' ,'1985-07-23'),
-       ('Guitarra', 'Cuerda pulsada', 'guitarra.png' , '2012-04-11'),
-       ('Trompeta', 'Viento metal', 'trompeta.png' , '1998-11-05'),
-       ('Trombón', 'Viento metal', 'trombon.png' , '2009-03-24'),
-       ('Tuba', 'Viento metal', 'tuba.png' , '2021-06-15');
+VALUES ('Laúd', 'Cuerda pulsada', '/CollabJAVA09/resources/laud.png' ,'1985-07-23'),
+       ('Guitarra', 'Cuerda pulsada', '/CollabJAVA09/resources/guitarra.png' , '2012-04-11'),
+       ('Trompeta', 'Viento metal', '/CollabJAVA09/resources/trompeta.png' , '1998-11-05'),
+       ('Trombón', 'Viento metal', '/CollabJAVA09/resources/trombon.png' , '2009-03-24'),
+       ('Tuba', 'Viento metal', '/CollabJAVA09/resources/tuba.png' , '2021-06-15');
 
