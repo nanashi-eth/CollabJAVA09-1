@@ -27,6 +27,7 @@
     <p> COMPRO PLATA </p>
 </c:forEach>
 <br/>
-<p>Pulsa <a href="jspTable.jsp">aquí</a> para ver la gran tabla.</p>
+<p>Pulsa <a href="instrumento-servlet-tabla">aquí</a> para ver la gran tabla.</p>
+<p>Pulsa <a href="instrumento-servlet-lista">aquí</a> para ver la gran lista.</p>
 </body>
 </html>
