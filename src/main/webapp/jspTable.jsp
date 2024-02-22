@@ -9,11 +9,12 @@
     throw new RuntimeException(e);
 } %>
 
-<HTML>
+<HTML lang="es">
 <HEAD>
     <TITLE> Tabla de Instrumentos </TITLE>
     <% String ruta = request.getContextPath() + "/css/style.css"; %>
     <link rel="stylesheet" type="text/css" href="<%= ruta %>" />
+    <link rel="icon" type="image/png" href="<%= request.getContextPath() %>/resources/favicon.png">
 </HEAD>
 
 <BODY>
@@ -22,7 +23,7 @@
 <section>
     <h2>INSTRUMENTOS DE LA FAMILIA DE CUERDA PULSADA</h2>
     <div class="tabla">
-    <TABLE BORDER="1">
+    <TABLE>
         <TR>
             <TH>Nombre</TH>
             <TH>Familia</TH>
@@ -41,7 +42,7 @@
 <br><br><br>
 <section>
     <h2>INSTRUMENTOS DE LA FAMILIA DE VIENTO METAL</h2>
-    <TABLE BORDER="1">
+    <TABLE >
         <TR>
             <TH>Nombre</TH>
             <TH>Familia</TH>
@@ -58,6 +59,6 @@
 </section>
 <p>Pulsa <a href="index.jsp">aquí</a> para ver el origen.</p>
 <!-- Make a request to the servlet when the page loads to populate the list -->
-<img src="instrumento-servlet" style="display:none;">
+<img src="instrumento-servlet" alt="instrumento" style="display:none;">
 </BODY>
 </HTML>

@@ -3,6 +3,7 @@
 <head>
     <title>Page Title</title>
     <link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/css/style.css">
+    <link rel="icon" type="image/png" href="<%= request.getContextPath() %>/resources/favicon.png">
 </head>
 <body>
 <%@page language="java" import="java.util.*" %>
@@ -30,17 +31,10 @@
     %>    
 </jsp:useBean>
 
-<!-- Resto del código para mostrar la fecha -->
-
-<UL>
-<LI>Día: <%= clock.getDayOfMonth() %>
-<LI>Mes: <%= clock.getMonthInt() %>
-</UL>
-
 <section>
     <% String ruta = request.getContextPath() + "/resources/" + clock.getZodiaco() + ".jpg"; %>
     <img class="img_zodiac" src="<%= ruta %>" alt="Zodiac Sign Image">
-    <p class="text_title"><%= clock.getZodiaco() %></p>
+    <H3 class="text_zodiac"><%= clock.getZodiaco() %></H3>
     <div class="text_zodiac"><%= clock.getTextZodiaco(clock.getZodiaco())%></div>
 </section>
 <%--

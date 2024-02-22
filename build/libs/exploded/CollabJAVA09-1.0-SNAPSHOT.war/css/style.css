@@ -1,0 +1,95 @@
+/* Estilos generales */
+body {
+    height: auto;
+    width: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuentes modernas */
+    background-color: #2E3440; /* Color de fondo principal tono Pale Night Vaporwave */
+    color: #D8DEE9; /* Color del texto principal */
+    line-height: 1.6; /* Altura de línea mejorada para una mejor legibilidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+
+/* Estilos para la imagen del signo zodiacal */
+.img_zodiac {
+    width: 200px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block; /* Mostrar como bloque para centrar fácilmente */
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para el texto del signo zodiacal */
+.text_zodiac {
+    font-size: 18px; /* Tamaño de fuente */
+    text-align: center; /* Alineación centrada */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+section{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el título del signo zodiacal */
+.text_title {
+    font-size: 32px; /* Tamaño de fuente */
+    text-align: center; /* Alineación centrada */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para la tabla */
+.tabla {
+    width: 100%; /* Ancho completo */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para las filas pares */
+tr:nth-child(even) {
+    background-color: #434C5E; /* Color de fondo */
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid #a8a8ff;
+}
+
+/* Estilos al pasar el ratón sobre una fila */
+tr:hover {
+    background-color: #586875; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el contenedor de la lista de instrumentos */
+#divLista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Columnas automáticas con un ancho mínimo de 220px */
+    gap: 20px; /* Espacio entre elementos */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para cada artículo de la lista de instrumentos */
+article {
+    background-color: #434C5E; /* Color de fondo */
+    padding: 20px; /* Relleno */
+    border-radius: 8px; /* Borde redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+article:hover{
+    box-shadow: #a8a8ff 0 0 20px;
+}
+
+/* Estilos para la imagen del instrumento */
+.img_instrumento {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática para mantener la proporción */
+    max-width: 100%; /* Ancho máximo */
+    max-height: 150px; /* Altura máxima */
+    display: block; /* Mostrar como bloque */
+    margin: 0 auto 10px; /* Margen inferior */
+}
